@@ -1,0 +1,182 @@
+/* ==========================================================================
+   ADMINER DARK THEME
+   Custom CSS for Adminer database interface dark theme
+   ========================================================================== */
+
+/* ==========================================================================
+   BASIC LAYOUT AND TYPOGRAPHY
+   ========================================================================== */
+
+/* Basic page settings */
+html,
+body {
+    background-color: #1e1f22;
+    color: #b5b5b5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    background-color: #1e1f22 !important;
+}
+
+/* Headings */
+h1 {
+    background: transparent;
+    border-bottom: 1px solid #999;
+    color: #777;
+    font-size: 150%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0.8em 0.667em;
+}
+
+h2 {
+    background: #2b2d30;
+    font-size: 150%;
+    font-weight: normal;
+    margin: 0 0 20px -18px;
+    padding: 0.8em 1em;
+}
+
+h3 {
+    color: #af8d57;
+    font-size: 130%;
+    font-weight: normal;
+    margin: 1em 0 0;
+}
+
+/* ==========================================================================
+   LINKS AND NAVIGATION
+   ========================================================================== */
+
+/* Basic link styling */
+a {
+    color: #b5b5b5;
+}
+
+a:visited {
+    color: #b5b5b5;
+}
+
+/* Active elements */
+.active {
+    color: #af8d57 !important;
+    font-weight: bold;
+}
+
+/* Navigation elements */
+#logins a,
+#tables a,
+#tables span {
+    background: transparent;
+}
+
+/* JUSH syntax highlighting links */
+.jush a {
+    color: #448dd0;
+}
+
+/* ==========================================================================
+   LAYOUT COMPONENTS
+   ========================================================================== */
+
+/* Main menu */
+#menu {
+    background-color: #2b2d30;
+}
+
+/* Breadcrumb navigation */
+#breadcrumb {
+    background: #2b2d30;
+    height: 2em;
+    left: 21em;
+    line-height: 1.8em;
+    margin: 0 0 0 -18px;
+    padding: 0 1em;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+}
+
+/* Logout button */
+.logout {
+    background-color: transparent;
+    box-shadow: 0 0 5px 5px transparent;
+    margin-top: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* ==========================================================================
+   TABLES AND DATA DISPLAY
+   ========================================================================== */
+
+/* Basic table styling */
+table,
+td,
+th,
+.js .column {
+    border-color: #313438;
+    border-style: solid;
+}
+
+/* Table headers */
+thead td,
+thead th {
+    background: #2b2d30;
+}
+
+/* Row alternating background - odd rows (darker) */
+tbody tr:nth-child(odd),
+table tr:nth-child(odd) {
+    background-color: #1e1f22 !important;
+}
+
+/* Row alternating background - even rows (lighter) */
+.odds tbody tr:nth-child(2n),
+tbody tr:nth-child(even),
+table tr:nth-child(even) {
+    background-color: #26282e !important;
+}
+
+/* Hover effect for table rows */
+table tr:hover {
+    background-color: #3a3d40 !important;
+}
+
+/* Basic styling for rows */
+tr {
+    border-color: inherit;
+    display: table-row;
+    unicode-bidi: isolate;
+    vertical-align: inherit;
+}
+
+/* ==========================================================================
+   CODE BLOCKS AND SYNTAX
+   ========================================================================== */
+
+code {
+    background: transparent;
+    font-size: 110%;
+    padding: 1px 2px;
+}
+
+/* ==========================================================================
+   PAGE FOOTER
+   ========================================================================== */
+
+.footer {
+    bottom: 0;
+    box-shadow: 0 -5px 10px 10px #2b2d30;
+    margin: 23px -20px 0.5em 0;
+    position: sticky;
+}
+
+.footer > div {
+    background: #2b2d30;
+    padding: 0 0 0.5em;
+}
