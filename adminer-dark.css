@@ -1,7 +1,21 @@
-/* ==========================================================================
-   ADMINER DARK THEME
-   Custom CSS for Adminer database interface dark theme
-   ========================================================================== */
+/*!
+ * ADMINER DARK THEME — v1.0
+ * Custom CSS theme for Adminer (https://www.adminer.org/)
+ * Author: Michael Grznár <grznar@michaelg.cz>
+ * Repository: https://github.com/MichaelGrznar/adminer-dark-css
+ *
+ * Description:
+ *   A minimalist dark mode theme for Adminer. No layout or HTML changes – just colors.
+ *   Fully compatible with Adminer version 5.3 and above.
+ *
+ * Based on:
+ *   Adminer by Jakub Vrána – https://github.com/vrana/adminer
+ *   Licensed under the Apache License 2.0 – https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * License:
+ *   This theme is licensed under the Apache License 2.0.
+ *   You may freely use, modify, and distribute this file under the terms of that license.
+ */
 
 /* ==========================================================================
    BASIC LAYOUT AND TYPOGRAPHY
@@ -38,6 +52,7 @@ h2 {
     font-weight: normal;
     margin: 0 0 20px -18px;
     padding: 0.8em 1em;
+    color: #fff;
 }
 
 h3 {
@@ -76,6 +91,30 @@ a:visited {
 /* JUSH syntax highlighting links */
 .jush a {
     color: #448dd0;
+}
+
+/* ==========================================================================
+   BUTTONS AND FORM ELEMENTS
+   ========================================================================== */
+
+/* Button styling */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    background-color: #3574f0 !important;
+    color: white !important;
+    border: none !important;
+    padding: 3px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: #2559cc !important;
 }
 
 /* ==========================================================================
@@ -121,6 +160,7 @@ th,
 .js .column {
     border-color: #313438;
     border-style: solid;
+    background: transparent;
 }
 
 /* Table headers */
